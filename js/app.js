@@ -15,7 +15,7 @@ const isLiked = (id) => {
   return likedPostsId?.length && !!likedPostsId.includes(id);
 };
 
-// Click To Like react Bug Resolved
+//Bug 1 :: Click To Like react Bug Resolved
 
 const addToLiked = (id) => {
   likedPostsId.push(id);
@@ -29,7 +29,7 @@ const reportPost = (id) => {
 };
 
 
-// Status Related Bug Resolved
+//Bug 3 :: Status Related Bug Resolved
 
 const displayContent = (text) => {
   return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
@@ -58,11 +58,11 @@ const switchTab = (id) => {
 const createPost = (post) => {
   const image = post.image;
 
-  // User Image Bug Issue Resolved
+  //Bug 2 :: User Image Bug Issue Resolved
 
   const userImage = post.userImage;
 
-  // User Name And Comment Bug Issue Resolved
+  //Bug 4 :: User Name And Comment Bug Issue Resolved
 
   const userName = post.comments[0].user;
   const userComment = post.comments[0].text;
@@ -160,7 +160,7 @@ const showPosts = (posts) => {
 
 const displayLikedPosts = () => {
 
-  // Liked Page Bug Issue Resolved
+  //Bug 6 :: Liked Page Bug Issue Resolved
 
   document.getElementById("liked").innerHTML = "";
 
@@ -173,7 +173,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
 
-  // Reported Page Bug Issue Resolved
+  //Bug 5 :: Reported Page Bug Issue Resolved
 
   document.getElementById("reported").innerHTML = "";
 
