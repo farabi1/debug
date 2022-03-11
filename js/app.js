@@ -26,8 +26,11 @@ const reportPost = (id) => {
   showPosts(remainingPosts);
 };
 
+
+// Status Related Bug Resolved
+
 const displayContent = (text) => {
-  return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+  return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
 
 const switchTab = (id) => {
@@ -52,7 +55,17 @@ const switchTab = (id) => {
 
 const createPost = (post) => {
   const image = post.image;
+
+  // User Image Bug Issue Resolved
+
   const userImage = post.userImage;
+
+  // User Name And Comment Bug Issue Resolved
+
+  const userName = post.comments[0].user;
+  const userComment = post.comments[0].text;
+
+  
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
@@ -120,9 +133,9 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments?.user}
+                          ${userName}
                       </a>
-                      ${post.comments?.text}
+                      ${userComment}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
