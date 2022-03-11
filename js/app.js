@@ -15,7 +15,7 @@ const isLiked = (id) => {
   return likedPostsId?.length && !!likedPostsId.includes(id);
 };
 
-// Click To react Bug Resolved
+// Click To Like react Bug Resolved
 
 const addToLiked = (id) => {
   likedPostsId.push(id);
