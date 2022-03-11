@@ -158,6 +158,9 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
+
+  // Liked Page Bug Issue Resolved
+
   document.getElementById("liked").innerHTML = "";
 
   const likedPosts = getLikedPosts();
@@ -168,6 +171,9 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
+
+  // Reported Page Bug Issue Resolved
+
   document.getElementById("reported").innerHTML = "";
 
   const reportedPosts = getReportedPosts();
