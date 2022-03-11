@@ -15,8 +15,10 @@ const isLiked = (id) => {
   return likedPostsId?.length && !!likedPostsId.includes(id);
 };
 
+// Click To react Bug Resolved
+
 const addToLiked = (id) => {
-  likedPostsId.plus(id);
+  likedPostsId.push(id);
   showPosts(posts);
 };
 
@@ -65,7 +67,7 @@ const createPost = (post) => {
   const userName = post.comments[0].user;
   const userComment = post.comments[0].text;
 
-  
+
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
