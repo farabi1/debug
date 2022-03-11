@@ -59,9 +59,36 @@
     </main>
 
     <!-- Bonus Part Question And Answer -->
-    <h2>How does javascript Work?</h2>
-    <h2>What does Javascript Event Loop do?</h2>
-    <h2>Different between local storage and session storage?</h2>
+    <div>
+        <h2>How does javascript Work?</h2>
+        <h4>JavaScript is a single threaded programming language.That means it only have a single call stack and can do
+            only one work at a time.the engine used for javascript have two component.Which are <br>
+            1.Memory Heap : used for Memory Allocation <br>
+            2.Call Stack : used for stack frame to execute code <br>
+            The Callback Queue get entered in the js engine and after processing it produce result through web API.Such
+            as DOM , AJAX, TimeOut etc. </h4>
+    </div>
+    <div>
+        <h2>What does Javascript Event Loop do?</h2>
+        <h4>Event loop is a process of javascript to do its work on a runtime basis.It do the work as code execution,
+            collecting the event , then processing the event.Finally Executing the task. In this system the task are
+            formed in a Queue format for execution.It complete one event then start to execute another event.It never
+            get Blocked. </h4>
+    </div>
+    <div>
+        <h2>Different between local storage and session storage?</h2>
+        <h4>The main Difference between Local Storage and session storage is
+            the local storage store data and it have no expiration date.
+            On the other hand session Storage also store data but in this system the data is eliminated whenever the
+            user close the browser.
+            session timeout situation can be happened if data does not get reloaded in time.
+            whereas local storage store data without time frame. <br>
+            This two type of storage have 4 type of Method for each <br>
+            1. setItem() <br>
+            2.getItem() <br>
+            3.removeItem() <br>
+            4. clear()
+    </div>
 
     <footer></footer>
 
